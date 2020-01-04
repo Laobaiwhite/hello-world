@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html小白3.1</title>
+    <style>
+    .cities {
+        background-color: black;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+    }
+    </style>
+
+    <style>
+        .animals {
+            background-color: brown;
+            color: antiquewhite;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /*必须用#而不是. 要注意*/
+        #header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /*定义导航链接的容器*/
+        #nav{
+            background-color: bisque;
+            height: 300px;
+            width: 200px;
+            float: left;
+            padding: 5px;
+        }
+
+        /*定义文档中的节*/
+        #section{
+            width: 350px;
+            float: left;
+            padding: 10px;
+        }
+
+        #footer{
+            background-color: black;
+            color:white;
+            text-align: center;
+            clear: both;
+
+        }
+    </style>
+
+    <style>
+        span.red{color: crimson}
+    </style>
+
+    <style>
+        table.lamp {
+            width: 100%;
+            border: 1px solid #dd44dd;
+        }
+        table.lamp td,th{
+            padding: 5px;
+        }
+        table.lamp td{
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+<!--“块级元素”译为 block level element，“内联元素”译为 inline element。-->
+<!--块级元素在浏览器显示时，通常会以新行来开始（和结束）。-->
+<!--例子：<h1>, <p>, <ul>, <table>-->
+<!--内联元素在显示时通常不会以新行开始。-->
+<!--例子：<b>, <td>, <a>, <img>    -->
+
+<!--分类块级元素-->
+<!--HTML <div> 元素是块级元素。它能够用作其他 HTML 元素的容器。 -->
+<!--设置 <div> 元素的类，使我们能够为相同的 <div> 元素设置相同的类：-->
+
+<!--分类行内元素-->
+<!--HTML <span> 元素是行内元素，能够用作文本的容器。-->
+<!--设置 <span> 元素的类，能够为相同的 <span> 元素设置相同的样式-->
+
+    <div class="cities">
+           <h2>London</h2>
+           <p>
+           London is the capital city of England.
+           It is the most populous city in the United Kingdom,
+           with a metropolitan area of over 13 million inhabitants.
+        </p>
+    </div>
+
+    <div class="animals">
+        <h2>Cat</h2>
+        <p>这是第二次尝试使用div</p>
+    </div>
+
+
+    <h2>你好，这是我<span class="red">第一次使用</span> div</h2>
+
+    <div id="header">
+        <h2>这是div多列布局</h2>
+    </div>
+
+    <div id="nav">
+        London<br>
+        Paris<br>
+        Tokyo<br>
+    </div>
+
+    <div id="section">
+        <h2>London</h2>
+        <p>
+            London is the capital city of England. It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.
+        </p>
+    </div>
+
+    <div id="footer">
+        Copyright LaoBai
+    </div>
+
+    <table class="lamp">
+       <tr>
+        <th>
+            <img src="v2-2188fe2ffaa2a11b8795c5417b849592_r.jpg" alt="note" style="height: 35px;width:30px "  >
+        </th>
+        <td>
+            table元素不是作为布局工具而设计的
+        </td>
+        </tr>
+    </table>
+
+</body>
+</html>
